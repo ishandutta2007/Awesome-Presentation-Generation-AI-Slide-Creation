@@ -4,11 +4,13 @@
 
 # 🚀 Awesome Presentation Generation & AI Slide Creation
 
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Tracked Repos](https://img.shields.io/badge/Open--Source-22%20Projects-6366f1?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Presentation-Generation-AI-Slide-Creation)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Presentation-Generation-AI-Slide-Creation/pulls)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-blue.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-emerald.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Presentation-Generation-AI-Slide-Creation)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 <p align="center">
   <strong>Curated Directory of SaaS Platforms, Open-Source Slide Engines, Agentic PPTX Pipelines &amp; Automated Visual Storytelling Tools</strong><br>
@@ -30,6 +32,8 @@
   - [🧩 Complementary Presentation Utilities & Frameworks](#-complementary-presentation-utilities--frameworks)
 - [🎯 Key Architectural Workflows](#-key-architectural-workflows)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📊 Star History](#-star-history)
 - [📄 Disclaimer](#-disclaimer)
 
 ---
@@ -141,6 +145,24 @@ We welcome contributions from developers, researchers, designers, and founders! 
 4. Submit a **Pull Request** detailing why the tool is valuable to the AI presentation ecosystem.
 
 ⭐ **Star this repository** if you find this ecosystem index helpful!
+
+---
+
+## 💖 Support
+
+A huge thank you to everyone exploring, using, and contributing to this ecosystem! If you find this curated directory helpful for your research, projects, or workflow:
+
+- ⭐ **Star** this repository to help others discover it.
+- 🍴 **Fork** it to build your own custom slide generators or workflows.
+- 📢 **Share** it with fellow AI engineers, founders, researchers, and creators.
+- ☕ **Buy me a coffee / Sponsor**: If you'd like to support ongoing maintenance and new tools indexing, please consider sponsoring via the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**!
+
+---
+
+## 📊 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Presentation-Generation-AI-Slide-Creation&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Presentation-Generation-AI-Slide-Creation&type=date&legend=top-left)
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Presentation-Generation-AI-Slide-Creation&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Presentation-Generation-AI-Slide-Creation&type=date&legend=top-left)
 
 ---
 
