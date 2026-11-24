@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background linear and radial gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d1a" />
+      <stop offset="45%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a13" />
+    </linearGradient>
+
+    <radialGradient id="glow1" cx="20%" cy="25%" r="45%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow2" cx="80%" cy="75%" r="50%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow3" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#c7d2fe" />
+      <stop offset="70%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <!-- Badge / Glass border Gradients -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#c084fc" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0.5" />
+    </linearGradient>
+
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0" />
+      <stop offset="25%" stop-color="#818cf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="1" />
+      <stop offset="75%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 800;
+      font-size: 40px;
+      fill: url(#titleGrad);
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      fill: #cbd5e1;
+      letter-spacing: 0.2px;
+    }
+    .tagline {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      fill: #a5b4fc;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      fill: #e2e8f0;
+    }
+    
+    /* Dynamic Animation Elements strictly in the background */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.08); }
+    }
+    @keyframes floatCard1 {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(1.5deg); }
+    }
+    @keyframes floatCard2 {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(10px) rotate(-1.5deg); }
+    }
+    @keyframes shimmerBar {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    @keyframes orbitNode {
+      0% { transform: rotate(0deg) translateX(45px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(45px) rotate(-360deg); }
+    }
+
+    .pulse-bg-1 {
+      animation: pulseGlow 6s ease-in-out infinite;
+      transform-origin: 200px 100px;
+    }
+    .pulse-bg-2 {
+      animation: pulseGlow 8s ease-in-out infinite 2s;
+      transform-origin: 1000px 260px;
+    }
+    .floating-card-left {
+      animation: floatCard1 7s ease-in-out infinite;
+    }
+    .floating-card-right {
+      animation: floatCard2 6s ease-in-out infinite 1s;
+    }
+    .orbiting-dot {
+      animation: orbitNode 10s linear infinite;
+      transform-origin: 1080px 80px;
+    }
+  </style>
+
+  <!-- Canvas background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="360" rx="16" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" />
+
+  <!-- Dynamic ambient glows behind content -->
+  <circle cx="200" cy="100" r="280" fill="url(#glow1)" class="pulse-bg-1" />
+  <circle cx="1000" cy="260" r="300" fill="url(#glow2)" class="pulse-bg-2" />
+  <circle cx="600" cy="180" r="240" fill="url(#glow3)" />
+
+  <!-- Geometric Grid Pattern (Subtle background) -->
+  <g opacity="0.07" stroke="#ffffff" stroke-width="0.8">
+    <line x1="100" y1="0" x2="100" y2="360" />
+    <line x1="250" y1="0" x2="250" y2="360" />
+    <line x1="400" y1="0" x2="400" y2="360" />
+    <line x1="550" y1="0" x2="550" y2="360" />
+    <line x1="700" y1="0" x2="700" y2="360" />
+    <line x1="850" y1="0" x2="850" y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+    <line x1="0" y1="80" x2="1200" y2="80" />
+    <line x1="0" y1="160" x2="1200" y2="160" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="320" x2="1200" y2="320" />
+  </g>
+
+  <!-- Left Dynamic Background Card (Slide Deck Wireframe) -->
+  <g class="floating-card-left" opacity="0.45">
+    <rect x="50" y="70" width="160" height="105" rx="8" fill="url(#cardGrad)" stroke="#6366f1" stroke-width="1.2" />
+    <!-- Slide Header Bar -->
+    <rect x="62" y="82" width="60" height="8" rx="4" fill="#818cf8" />
+    <!-- Slide content placeholders -->
+    <rect x="62" y="98" width="136" height="5" rx="2.5" fill="#475569" />
+    <rect x="62" y="110" width="115" height="5" rx="2.5" fill="#475569" />
+    <rect x="62" y="122" width="128" height="5" rx="2.5" fill="#475569" />
+    <!-- Mini chart bars -->
+    <rect x="62" y="145" width="14" height="18" rx="2" fill="#ec4899" opacity="0.8" />
+    <rect x="82" y="138" width="14" height="25" rx="2" fill="#818cf8" opacity="0.8" />
+    <rect x="102" y="142" width="14" height="21" rx="2" fill="#38bdf8" opacity="0.8" />
+    <rect x="122" y="133" width="14" height="30" rx="2" fill="#a855f7" opacity="0.9" />
+  </g>
+
+  <!-- Right Dynamic Background Card (AI Pipeline Flow) -->
+  <g class="floating-card-right" opacity="0.45">
+    <rect x="980" y="170" width="170" height="115" rx="8" fill="url(#cardGrad)" stroke="#f472b6" stroke-width="1.2" />
+    <rect x="995" y="185" width="70" height="8" rx="4" fill="#f472b6" />
+    <!-- Connected node flow -->
+    <circle cx="1015" cy="225" r="9" fill="#6366f1" />
+    <line x1="1024" y1="225" x2="1055" y2="225" stroke="#94a3b8" stroke-dasharray="2,2" stroke-width="1.5" />
+    <circle cx="1065" cy="225" r="10" fill="#ec4899" />
+    <line x1="1075" y1="225" x2="1105" y2="225" stroke="#94a3b8" stroke-dasharray="2,2" stroke-width="1.5" />
+    <rect x="1105" y="215" width="28" height="20" rx="4" fill="#38bdf8" />
+    <text x="1000" y="265" font-family="sans-serif" font-size="10" fill="#94a3b8">PROMPT ➔ AGENT ➔ PPTX</text>
+  </g>
+
+  <!-- Orbiting sparkle decoration top right -->
+  <g opacity="0.5">
+    <circle cx="1080" cy="80" r="45" fill="none" stroke="#818cf8" stroke-width="1" stroke-dasharray="3,4" />
+    <circle cx="1080" cy="80" r="5" fill="#f472b6" />
+    <circle cx="1080" cy="35" r="4" fill="#38bdf8" class="orbiting-dot" />
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header, Titles, Subtitles, Feature Pills -->
+  <g transform="translate(600, 72)" text-anchor="middle">
+    <!-- Top Pill Badge -->
+    <rect x="-140" y="-32" width="280" height="26" rx="13" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+    <text x="0" y="-15" text-anchor="middle" class="tagline">✨ Curated AI Slide Ecosystem</text>
+
+    <!-- Main Title -->
+    <text x="0" y="42" class="title">Presentation Generation &amp; AI Slide Creation</text>
+
+    <!-- Subtitle Lines -->
+    <text x="0" y="84" class="subtitle">Next-Gen SaaS Platforms, Open-Source Slide Builders &amp; Agentic PPTX Engines</text>
+    <text x="0" y="112" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
+      Automate Slide Deck Synthesis • Prompt-to-PPTX • Markdown Presentation Frameworks • Document-to-Deck
+    </text>
+
+    <!-- Glowing Accent Divider Line -->
+    <rect x="-350" y="136" width="700" height="2" fill="url(#accentLine)" rx="1" />
+  </g>
+
+  <!-- Interactive / Informative Pills Row in Foreground Bottom -->
+  <g transform="translate(600, 275)" text-anchor="middle">
+    <!-- Pill 1: Enterprise SaaS -->
+    <g transform="translate(-370, 0)">
+      <rect x="0" y="0" width="165" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+      <text x="82" y="22" text-anchor="middle" class="badge-text">⚡ SaaS Leaders</text>
+    </g>
+
+    <!-- Pill 2: Open-Source Tools -->
+    <g transform="translate(-185, 0)">
+      <rect x="0" y="0" width="170" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+      <text x="85" y="22" text-anchor="middle" class="badge-text">⭐ Open-Source Repos</text>
+    </g>
+
+    <!-- Pill 3: Agentic Workflows -->
+    <g transform="translate(5, 0)">
+      <rect x="0" y="0" width="180" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+      <text x="90" y="22" text-anchor="middle" class="badge-text">🤖 Agentic Slide Gen</text>
+    </g>
+
+    <!-- Pill 4: Code & PPTX -->
+    <g transform="translate(205, 0)">
+      <rect x="0" y="0" width="165" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+      <text x="82" y="22" text-anchor="middle" class="badge-text">📊 Native .PPTX Export</text>
+    </g>
+  </g>
+
+</svg>
