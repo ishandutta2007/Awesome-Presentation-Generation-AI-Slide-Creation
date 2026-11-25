@@ -71,7 +71,7 @@ An exhaustive directory of open-source AI presentation generators, programmable 
 
 ### 🗂️ Open-Source Repositories (Ranked by Stars)
 
-The following repositories are strictly sorted in descending order by GitHub star count. Each entry features a social star badge linking directly to that project's stargazers community.
+The following repositories are strictly sorted in descending order by GitHub Stars_Count. Each entry features a social Stars_Badge linking directly to that project's stargazers community.
 
 | 📦 Repository & Link | ⭐ Stargazers | 💻 Primary Stack | 📝 Description & Architectural Role |
 |:---|:---|:---|:---|
@@ -140,7 +140,7 @@ We welcome contributions from developers, researchers, designers, and founders! 
 1. **Fork** this repository.
 2. Add your entry to either the **SaaS Table** or **Open-Source Table** ensuring proper sorting:
    - SaaS entries: Include exact pricing, free tier/trial details, and company valuation/revenue metrics.
-   - Open-Source entries: Include GitHub link, social star badge `https://img.shields.io/github/stars/{owner}/{repo}?style=social&color=white` linking to `/stargazers`, and primary stack.
+   - Open-Source entries: Include GitHub link, social Stars_Badge `https://img.shields.io/github/stars/{owner}/{repo}?style=social&color=white` linking to `/stargazers`, and primary stack.
 3. Ensure formatting and links adhere to GFM standards.
 4. Submit a **Pull Request** detailing why the tool is valuable to the AI presentation ecosystem.
 
